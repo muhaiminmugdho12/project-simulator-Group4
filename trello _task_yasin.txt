@@ -1,0 +1,12 @@
+# Trello Task Record — Mohammad Yasin
+
+## Assigned Tasks
+
+### TC_5
+Merchant — Universal QR Generation
+
+### TC_6
+Merchant — Refund Processing
+
+## Member
+Mohammad Yasin

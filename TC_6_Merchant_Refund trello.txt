@@ -1,0 +1,53 @@
+# TC_6 — Mohammad Yasin
+
+## Project Name
+PayDesk – Unified Multi-Bank & MFS Transaction Manager
+
+## Test Information
+- **Test Case ID:** TC_6  
+- **Test Designed By:** Mohammad Yasin  
+- **Test Designed Date:** 26/04/2026  
+- **Test Executed By:** Mohammad Yasin  
+- **Test Execution Date:** 26/04/2026  
+- **Priority:** Medium  
+- **Module Name:** Merchant — Refund Processing  
+
+## Test Title
+Verify that a Merchant can issue a partial refund for a returned item.
+
+## Description
+Test that a Merchant can locate a completed transaction and process a partial refund, with the refunded amount returning to the original payment source of the user.
+
+## Preconditions
+- Merchant is logged into the Merchant Dashboard  
+- A completed transaction exists  
+- Refund option enabled  
+
+## Dependencies
+- Payment gateway available  
+- User account linked to payment source  
+
+## Test Steps
+1. Open Merchant Dashboard  
+2. Locate completed transaction  
+3. Select Refund option  
+4. Enter partial refund amount  
+5. Confirm refund  
+6. Process refund  
+
+## Test Data
+- Transaction ID: TXN-20260426-0021  
+- Refund Amount: 250 BDT  
+- Payment Source: bKash  
+
+## Expected Results
+- Refund request accepted  
+- Partial refund processed successfully  
+- Amount returned to user account  
+- Merchant Dashboard updated  
+
+## Actual Result
+As expected  
+
+## Status
+Pass

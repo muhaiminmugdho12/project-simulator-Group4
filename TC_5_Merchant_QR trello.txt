@@ -1,0 +1,61 @@
+# TC_5 — Mohammad Yasin
+
+## Project Name
+PayDesk – Unified Multi-Bank & MFS Transaction Manager
+
+## Test Information
+- **Test Case ID:** TC_5  
+- **Test Designed By:** Mohammad Yasin  
+- **Test Designed Date:** 26/04/2026  
+- **Test Executed By:** Mohammad Yasin  
+- **Test Execution Date:** 26/04/2026  
+- **Priority:** High  
+- **Module Name:** Merchant — Universal QR Generation  
+
+## Test Title
+Verify generation of a dynamic Bangla QR code for a sale and acceptance via Personal User app.
+
+## Description
+Test that a Merchant can generate a dynamic QR code containing amount and order ID for a specific sale, and that the QR is scannable and processable by a Personal User's PayDesk app across supported payment providers.
+
+## Preconditions
+- Merchant is logged into the Merchant Dashboard  
+- Active store profile available  
+- At least one linked settlement account  
+
+## Dependencies
+- Bangla QR central standard service available  
+- Personal User test account with linked MFS wallet  
+
+## Test Steps
+1. Open Merchant Dashboard  
+2. Tap **Generate QR**  
+3. Enter sale amount  
+4. Enter or auto-generate Order ID  
+5. Tap **Create QR**  
+6. Display QR code  
+7. Open Personal User app  
+8. Tap **Scan & Pay**  
+9. Scan QR  
+10. Confirm amount and Order ID  
+11. Tap **Pay**  
+
+## Test Data
+- Merchant: Cafe Aroma  
+- Amount: 750 BDT  
+- Order ID: ORD-20260426-0091  
+- Payment Source: bKash (01919-887766)  
+
+## Expected Results
+- QR code generated within 2 seconds  
+- QR follows Bangla QR standards  
+- Correct amount and Order ID encoded  
+- User app auto-fills data  
+- Payment completes successfully  
+- Merchant Dashboard updates in real-time  
+
+## Actual Result
+As expected  
+
+## Status
+Pass
